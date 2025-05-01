@@ -1,18 +1,19 @@
-<p align="center"><img src="https://raw.githubusercontent.com/offalynne/input/main/LOGO.png" style="display:block; margin:auto; width:300px"></p>
+# Input Retro Gamepads Plug-in
 
-<h1 align="center">Input 10.0.7</h1>
+Adds type identification and icon configurations for additional gamepads to the [Input library](https://github.com/offalynne/Input) for GameMaker 2024.8
 
-<p align="center">Comprehensive cross-platform input for GameMaker 2024.8 by <a href="https://www.jujuadams.com/" target="_blank">Juju Adams</a>, <a href="https://offalynne.neocities.org/">Alynne Keith</a>, and <a href="https://offalynne.github.io/Input/#/7.0/Credits">Friends</a></p>
+New gamepad types with icon configuration
+- SNK NeoGeo
+- Sega Saturn
+- Nintendo 64
+- Nintendo GameCube
+    
+Broad device support
+- Nintendo Switch Online gamepads
+- Classic/mini console gamepads
+- 8BitDo gamepads and modkits
+- Raphnet-tech adapters
+- Mayflash adapters
+- Many more (50+ devices supported)
 
-&nbsp;
-
-&nbsp;
-
-- ### [Download the .yymps](https://github.com/offalynne/input/releases/)
-- ### Read the [documentation](https://offalynne.github.io/Input/)
-- ### Talk about Input on the [Discord server](https://discord.gg/s6NjaV8AnM)
-- ### You may also like [Firehammer](https://firehammergames.itch.io/firehammer-input) and [Input Dog](https://github.com/messhof/Input-Dog)
-
-&nbsp;
-
-<p align="center">Looking for Input 8 for GameMaker LTS 2022? <a href="https://github.com/offalynne/Input/tree/dev_8.1">Code</a>, <a href="https://offalynne.github.io/Input/#/8.1/">Documentation</a>, <a href="https://github.com/offalynne/Input/releases/tag/8.1.3">Release (.yymps)</a></p>
+### **[Download (.yymps)](https://github.com/offalynne/InputPlugin-RetroGamepads/releases)**
