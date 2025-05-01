@@ -37,6 +37,9 @@
     {"name":"Rebinding","order":5,"path":"folders/Input/Rebinding.yy",},
     {"name":"Verb Interaction","order":9,"path":"folders/Input/Verb Interaction.yy",},
     {"name":"Virtual Buttons","order":8,"path":"folders/Input/Virtual Buttons.yy",},
+    {"name":"Retro Gamepads","order":6,"path":"folders/Input Plug-Ins/Retro Gamepads.yy",},
+    {"name":"(System)","order":2,"path":"folders/Input Plug-Ins/Retro Gamepads/(System).yy",},
+    {"name":"Config","order":3,"path":"folders/Input Plug-Ins/Retro Gamepads/Config.yy",},
     {"name":"Test Case","order":4,"path":"folders/Test Case.yy",},
   ],
   "ResourceOrderSettings":[
