@@ -50,8 +50,8 @@ function __InputRetroCreateTypeLookup()
         _struct[$ "92124547"] = INPUT_GAMEPAD_TYPE_SATURN;
         _struct[$ "d80486e6"] = INPUT_GAMEPAD_TYPE_SATURN;
         _struct[$ "63257805"] = INPUT_GAMEPAD_TYPE_SATURN;
-        _struct[$ "a30c2700"] = INPUT_GAMEPAD_TYPE_SATURN;
-        _struct[$ "a30c2800"] = INPUT_GAMEPAD_TYPE_SATURN;        
+        _struct[$ "41120e50"] = INPUT_GAMEPAD_TYPE_SATURN;
+        _struct[$ "95090100"] = INPUT_GAMEPAD_TYPE_SATURN;
         _struct[$ "26092625"] = INPUT_GAMEPAD_TYPE_GAMECUBE;
         _struct[$ "7e053703"] = INPUT_GAMEPAD_TYPE_GAMECUBE;
         _struct[$ "26098888"] = INPUT_GAMEPAD_TYPE_GAMECUBE;
@@ -92,6 +92,8 @@ function __InputRetroCreateTypeLookup()
         _struct[$ "c82d6928"] = INPUT_GAMEPAD_TYPE_N64;
         _struct[$ "242ff400"] = INPUT_GAMEPAD_TYPE_N64;
         _struct[$ "242ff500"] = INPUT_GAMEPAD_TYPE_N64;
+        _struct[$ "a30c2700"] = INPUT_GAMEPAD_TYPE_SATURN;
+        _struct[$ "a30c2800"] = INPUT_GAMEPAD_TYPE_SATURN;
         _struct[$ "d80421f4"] = INPUT_GAMEPAD_TYPE_NEOGEO;
         _struct[$ "9b284800"] = INPUT_GAMEPAD_TYPE_NEOGEO;
         _struct[$ "9212474e"] = INPUT_GAMEPAD_TYPE_NEOGEO;
