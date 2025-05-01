@@ -1,9 +1,9 @@
-# Input Retro Gamepads Plug-in
+# Retro Gamepads Input Plug-in
 
-Adds type identification and icon configurations for additional gamepads to the [Input library](https://github.com/offalynne/Input) for GameMaker 2024.8
+Additional gamepad type and icon configurations for the [Input library](https://github.com/offalynne/Input) for GameMaker 2024.8
 
-New gamepad types with icon configuration
-- SNK NeoGeo
+Added gamepad types
+- SNK Neo Geo
 - Sega Saturn
 - Nintendo 64
 - Nintendo GameCube
