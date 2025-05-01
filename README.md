@@ -1,6 +1,6 @@
 # Retro Gamepads Input Plug-in
 
-Additional gamepad type and icon configurations for the [Input library](https://github.com/offalynne/Input) for GameMaker 2024.8
+Additional gamepad type and icon configurations for [Input for GameMaker 2024.8](https://github.com/offalynne/Input)
 
 Added gamepad types
 - SNK Neo Geo
@@ -14,6 +14,6 @@ Broad device support
 - 8BitDo gamepads and modkits
 - Raphnet-tech adapters
 - Mayflash adapters
-- Many more (50+ devices supported)
+- Many more (50+ devices)
 
 ### **[Download (.yymps)](https://github.com/offalynne/InputPlugin-RetroGamepads/releases)**
