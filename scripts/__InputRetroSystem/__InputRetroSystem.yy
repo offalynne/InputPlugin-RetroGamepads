@@ -6,7 +6,7 @@
   "name":"__InputRetroSystem",
   "parent":{
     "name":"(System)",
-    "path":"folders/Retro Gamepads/(System).yy",
+    "path":"folders/Input Plug-Ins/Retro Gamepads/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
