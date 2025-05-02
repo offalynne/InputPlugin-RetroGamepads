@@ -1,9 +1,9 @@
 // Feather disable all
 
-#macro INPUT_GAMEPAD_TYPE_NEOGEO    101
-#macro INPUT_GAMEPAD_TYPE_SATURN    102
-#macro INPUT_GAMEPAD_TYPE_N64       103
-#macro INPUT_GAMEPAD_TYPE_GAMECUBE  104
+#macro INPUT_GAMEPAD_TYPE_NEOGEO    100
+#macro INPUT_GAMEPAD_TYPE_SATURN    101
+#macro INPUT_GAMEPAD_TYPE_N64       102
+#macro INPUT_GAMEPAD_TYPE_GAMECUBE  103
 
 function __InputRetroCreateTypeLookup()
 {

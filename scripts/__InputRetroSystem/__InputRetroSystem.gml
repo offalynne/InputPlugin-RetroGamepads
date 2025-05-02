@@ -11,17 +11,15 @@ function __InputRetroSystem()
     {        
         InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.GAMEPAD_CONNECTED, undefined, function(_gamepad)
         {
-            var _retroTypeLookupStruct = __InputRetroCreateTypeLookup();    
-            var _gamepadArray = __InputSystem().__gamepadArray;
-            
-            if ((_gamepad < 0) || (_gamepad >= array_length(_gamepadArray))) return;
-            
-            with(_gamepadArray[_gamepad])
-            {
-                __type = _retroTypeLookupStruct[$ __vendor + __product] ?? __type;
-            }
-        })
-    }
+			var _retroTypeLookup = __InputRetroCreateTypeLookup();
+			var _retroType = _retroTypeLookup[$ InputPlugInGamepadGetVendorAndProduct(_gamepad)];
+			
+			if (_retroType != undefined)
+			{
+				InputPlugInGamepadSetType(_gamepad, _retroType);
+			}
+		});
+	}
     
     return _system;
 }
