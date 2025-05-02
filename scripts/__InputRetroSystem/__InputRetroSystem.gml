@@ -9,19 +9,17 @@ function __InputRetroSystem()
     _system = {};
     with(_system)
     {        
-        InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.GAMEPAD_CONNECTED, undefined, function(_gamepad)
+        InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.GAMEPAD_CONNECTED, undefined, function(_device)
         {
-            var _retroTypeLookupStruct = __InputRetroCreateTypeLookup();    
-            var _gamepadArray = __InputSystem().__gamepadArray;
-            
-            if ((_gamepad < 0) || (_gamepad >= array_length(_gamepadArray))) return;
-            
-            with(_gamepadArray[_gamepad])
-            {
-                __type = _retroTypeLookupStruct[$ __vendor + __product] ?? __type;
-            }
-        })
-    }
+			var _retroTypeLookup = __InputRetroCreateTypeLookup();
+			var _retroType = _retroTypeLookup[$ InputPlugInGamepadGetVendorAndProduct(_device)] ??  __InputRetroDescriptionType(_device);
+			
+			if (_retroType != undefined)
+			{
+				InputPlugInGamepadSetType(_device, _retroType);
+			}
+		});
+	}
     
     return _system;
 }
