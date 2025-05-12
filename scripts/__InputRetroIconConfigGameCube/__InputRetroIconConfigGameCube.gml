@@ -36,3 +36,35 @@ InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_GAMECUBE,  gp_axisrh, "thumbstick r ri
 InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_GAMECUBE, -gp_axisrv, "thumbstick r up"   ); //C-stick up
 InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_GAMECUBE,  gp_axisrv, "thumbstick r down" ); //C-stick down
 InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_GAMECUBE,  gp_stickr, "thumbstick r click"); //C-stick click (third party and modkits only)
+
+
+
+#macro INPUT_GAMEPAD_TYPE_GAMECUBE  110
+
+__InputRetroTypeAdd(INPUT_GAMEPAD_TYPE_GAMECUBE, function(_description)
+{
+    return (__InputStringContains(_description, "gamecube", "wired fight pad pro for nintendo", "core (plus) wired") 
+        || (__InputStringContains(_description, "8bitdo") 
+         && __InputStringContains(_description, " ngc")));
+})
+.AddDeviceId("26092625")
+.AddDeviceId("7e053703")
+.AddDeviceId("26098888")
+.AddDeviceId("79004318")
+.AddDeviceId("79004418")
+.AddDeviceId("79004518")
+.AddDeviceId("79004618")
+.AddDeviceId("79004718")
+.AddDeviceId("430b0500")
+.AddDeviceId("341a05f7")
+.AddDeviceId("9b282100")
+.AddDeviceId("9b283400")
+.AddDeviceId("9b283700")
+.AddDeviceId("9b283a00")
+.AddDeviceId("9b283d00")
+.AddDeviceId("9b286200")
+.AddDeviceId("9b286500")
+.AddDeviceId("9b289200")
+.AddDeviceId("9b289500")
+.AddDeviceId("6f0e8501")
+.AddDeviceId("c82d6a28")

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__InputRetroDescriptionType",
+  "%Name":"__InputRetroClass",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__InputRetroDescriptionType",
+  "name":"__InputRetroClass",
   "parent":{
     "name":"(System)",
     "path":"folders/Input Plug-Ins/Retro Gamepads/(System).yy",

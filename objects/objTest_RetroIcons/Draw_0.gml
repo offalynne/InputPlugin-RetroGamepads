@@ -1,5 +1,4 @@
 var _string = "";
-
 if (INPUT_BAN_GAMEPADS)
 {
     _string += "Gamepads not supported on this platform";

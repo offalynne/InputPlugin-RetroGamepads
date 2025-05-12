@@ -1,11 +1,15 @@
 {
   "FolderOrderSettings":[
+    {"name":"Input Plug-Ins","order":2,"path":"folders/Input Plug-Ins.yy",},
     {"name":"Retro Gamepads","order":1,"path":"folders/Input Plug-Ins/Retro Gamepads.yy",},
     {"name":"(System)","order":1,"path":"folders/Input Plug-Ins/Retro Gamepads/(System).yy",},
     {"name":"Config","order":2,"path":"folders/Input Plug-Ins/Retro Gamepads/Config.yy",},
+    {"name":"Input","order":3,"path":"folders/Input.yy",},
+    {"name":"Test Case","order":4,"path":"folders/Test Case.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"acVibrationTest","order":12,"path":"animcurves/acVibrationTest/acVibrationTest.yy",},
+    {"name":"objTest_RetroIcons","order":7,"path":"objects/objTest_RetroIcons/objTest_RetroIcons.yy",},
     {"name":"objTest000_Verbs","order":3,"path":"objects/objTest000_Verbs/objTest000_Verbs.yy",},
     {"name":"objTest002_Clusters","order":13,"path":"objects/objTest002_Clusters/objTest002_Clusters.yy",},
     {"name":"objTest003_AdvancedCheckers","order":8,"path":"objects/objTest003_AdvancedCheckers/objTest003_AdvancedCheckers.yy",},
@@ -18,8 +22,8 @@
     {"name":"objTest103_TriggerEffects","order":6,"path":"objects/objTest103_TriggerEffects/objTest103_TriggerEffects.yy",},
     {"name":"objTest104_Party","order":10,"path":"objects/objTest104_Party/objTest104_Party.yy",},
     {"name":"objTest200_ConsoleSuite","order":5,"path":"objects/objTest200_ConsoleSuite/objTest200_ConsoleSuite.yy",},
-    {"name":"objTest300_RetroGamepadTest","order":14,"path":"objects/objTest300_RetroGamepadTest/objTest300_RetroGamepadTest.yy",},
-    {"name":"__InputRetroDescriptionType","order":2,"path":"scripts/__InputRetroDescriptionType/__InputRetroDescriptionType.yy",},
+    {"name":"rmTestConsoleSuite","order":1,"path":"rooms/rmTestConsoleSuite/rmTestConsoleSuite.yy",},
+    {"name":"__InputRetroClass","order":2,"path":"scripts/__InputRetroClass/__InputRetroClass.yy",},
     {"name":"__InputRetroIconConfigN64","order":1,"path":"scripts/__InputRetroIconConfigN64/__InputRetroIconConfigN64.yy",},
     {"name":"__InputRetroIconConfigNeoGeo","order":2,"path":"scripts/__InputRetroIconConfigNeoGeo/__InputRetroIconConfigNeoGeo.yy",},
     {"name":"__InputRetroIconConfigSaturn","order":3,"path":"scripts/__InputRetroIconConfigSaturn/__InputRetroIconConfigSaturn.yy",},

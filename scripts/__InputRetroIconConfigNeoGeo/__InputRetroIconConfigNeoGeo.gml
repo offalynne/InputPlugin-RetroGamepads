@@ -21,3 +21,17 @@ InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_NEOGEO, gp_padu, "thumbstick l up"   )
 InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_NEOGEO, gp_padd, "thumbstick l down" ); //Thumbstick right
 InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_NEOGEO, gp_padl, "thumbstick l left" ); //Thumbstick up
 InputIconDefineGamepad(INPUT_GAMEPAD_TYPE_NEOGEO, gp_padr, "thumbstick l right"); //Thumbstick down
+
+
+
+#macro INPUT_GAMEPAD_TYPE_NEOGEO  130
+
+__InputRetroTypeAdd(INPUT_GAMEPAD_TYPE_NEOGEO, function(_description)
+{
+    return __InputStringContains(_description, "neogeo")
+})
+.AddDeviceId("d80421f4")
+.AddDeviceId("9b284800")
+.AddDeviceId("9212474e")
+.AddDeviceId("c82d2590")
+.AddDeviceId("c82d2690")
