@@ -5,7 +5,7 @@ function __InputRetroTypeAdd(_type, _descriptionFilter)
     static _assert = undefined;
     if (_assert == undefined)
     {
-        InputPlugInAssertDependencies("alynne.retro", "1.0");
+        InputPlugInAssertDependencies("Alynne.Retro", "1.0");
     }
     
     var _typeStruct = new __InputRetroClass(_type);

@@ -10,8 +10,8 @@
   "name":"objTest_RetroIcons",
   "overriddenProperties":[],
   "parent":{
-    "name":"Input",
-    "path":"Input.yyp",
+    "name":"input",
+    "path":"input.yyp",
   },
   "parentObjectId":null,
   "persistent":false,

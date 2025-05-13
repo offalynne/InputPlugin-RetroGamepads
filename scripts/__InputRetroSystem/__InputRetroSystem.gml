@@ -41,8 +41,8 @@ function __InputRetroSystem()
                 {
                     InputPlugInGamepadSetType(_device, _type);
                 }
-            })
-        })
+            });
+        });
     }
     
     return _system;

@@ -1,19 +1,20 @@
 # Retro Gamepads Input Plug-in
 
-Additional gamepad type and icon configurations for [Input for GameMaker 2024.8](https://github.com/offalynne/Input)
+Additional (à la carte) gamepad type and icon configurations for [Input for GameMaker 2024.8](https://github.com/offalynne/Input)
 
-Added gamepad types
+### Added gamepad types
 - SNK Neo Geo
 - Sega Saturn
 - Nintendo 64
 - Nintendo GameCube
     
-Broad device support
-- Nintendo Switch Online gamepads
+### Broad device support
 - Classic/mini console gamepads
-- 8BitDo gamepads and modkits
-- Raphnet-tech adapters
+- Nintendo Switch Online gamepads
+- Retro-bit, Retroflag, 8BitDo gamepads
+- 8BitDo modkits
 - Mayflash adapters
+- Raphnet-tech adapters
 - Many more (50+ devices)
 
 ### **[Download (.yymps)](https://github.com/offalynne/InputPlugin-RetroGamepads/releases)**
