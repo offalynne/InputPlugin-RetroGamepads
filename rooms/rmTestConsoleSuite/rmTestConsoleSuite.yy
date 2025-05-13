@@ -17,8 +17,8 @@
   ],
   "name":"rmTestConsoleSuite",
   "parent":{
-    "name":"Input",
-    "path":"Input.yyp",
+    "name":"input",
+    "path":"input.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{

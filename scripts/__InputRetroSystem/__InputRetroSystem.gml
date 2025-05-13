@@ -12,31 +12,36 @@ function __InputRetroSystem()
         __vidPidLookupStruct = {};
         __descriptionFilterMap = ds_map_create();
         
-        InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.GAMEPAD_CONNECTED, undefined, function(_device)
+        InputPlugInDefine("Alynne.Retro", "alynne", "1.2", "10.0", function()
         {
-            var _gamepadArray = __InputSystem().__gamepadArray;
-            if ((_device < 0) || (_device >= array_length(_gamepadArray))) return;
-
-            var _type = __vidPidLookupStruct[$ InputPlugInGamepadGetVendorAndProduct(_device)];
-            if (INPUT_ON_MOBILE && (_type == undefined))
+            InputPlugInAssertDependencies("InputTeam.Icons", "1.0");
+            
+            InputPlugInRegisterCallback(INPUT_PLUG_IN_CALLBACK.GAMEPAD_CONNECTED, undefined, function(_device)
             {
-                var _key = ds_map_find_first(__descriptionFilterMap)
-                repeat(ds_map_size(__descriptionFilterMap))
+                var _gamepadArray = __InputSystem().__gamepadArray;
+                if ((_device < 0) || (_device >= array_length(_gamepadArray))) return;
+
+                var _type = __vidPidLookupStruct[$ InputPlugInGamepadGetVendorAndProduct(_device)];
+                if (INPUT_ON_MOBILE && (_type == undefined))
                 {
-                    if (__descriptionFilterMap[? _key](_gamepadArray[_device].__description))
+                    var _key = ds_map_find_first(__descriptionFilterMap)
+                    repeat(ds_map_size(__descriptionFilterMap))
                     {
-                        _type = _key;
-                        break;
-                    }
+                        if (__descriptionFilterMap[? _key](_gamepadArray[_device].__description))
+                        {
+                            _type = _key;
+                            break;
+                        }
                         
-                    _key = ds_map_find_next(__descriptionFilterMapm, _key);
+                        _key = ds_map_find_next(__descriptionFilterMapm, _key);
+                    }
                 }
-            }
 
-            if (_type != undefined)
-            {
-                InputPlugInGamepadSetType(_device, _type);
-            }
+                if (_type != undefined)
+                {
+                    InputPlugInGamepadSetType(_device, _type);
+                }
+            })
         })
     }
     

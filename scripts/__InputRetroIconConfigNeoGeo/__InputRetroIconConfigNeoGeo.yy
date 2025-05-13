@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__InputRetroIconConfigNeoGeo",
   "parent":{
-    "name":"Config",
-    "path":"folders/Input Plug-Ins/Retro Gamepads/Config.yy",
+    "name":"Retro Gamepads",
+    "path":"folders/Input Plug-Ins/Retro Gamepads.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -58,6 +58,8 @@ function __InputSystem()
         
         __gamepadArray = array_create(gamepad_get_device_count(), undefined);
         
+        __androidEnumerationTime = -infinity;
+        
         //Master definitions for verbs
         __verbDefinitionArray = []; //Contains structs for each verb definition
         __verbDefIndexArray   = []; //Contains verb indexes for each verb definition. The verb index values are usually sequential and continuous but not always!
@@ -100,8 +102,15 @@ function __InputSystem()
         __virtualOrderDirty  = false;
         __virtualButtonArray = [];
         
-        __plugInCurrentCallback = undefined;
-        __plugInCallbackArray = __InputSystemCallbackArray();
+        // 0 = Nothing happened yet, `InputPlugInDefine()` is permitted
+        // 1 = Initializing, `InputPlugInRegisterCallback()` is permitted
+        // 2 = Finished initializing
+        __plugInsInitializeState = 0;
+        
+        __plugInArray            = [];
+        __plugInDict             = {};
+        __plugInCurrentCallback  = undefined;
+        __plugInCallbackArray    = __InputSystemCallbackArray();
         
         __InputRegisterCollect();
         __InputRegisterCollectPlayer();
@@ -167,6 +176,13 @@ function __InputSystem()
         
         
         
+        //Disable Windows IME
+        if (INPUT_ON_WINDOWS)
+        {
+            keyboard_virtual_hide();
+        }
+        
+        
         //Create a time source if the library needs to self-manage
         if (INPUT_COLLECT_MODE != 2)
         {
@@ -174,8 +190,7 @@ function __InputSystem()
             {
                 if (INPUT_COLLECT_MODE == 1)
                 {
-                    __InputPlugInExecuteCallbacks(INPUT_PLUG_IN_CALLBACK.COLLECT);
-                    if (INPUT_UPDATE_AFTER_COLLECT) __InputPlugInExecuteCallbacks(INPUT_PLUG_IN_CALLBACK.UPDATE);
+                    __InputCollect();
                 }
                 else if (INPUT_COLLECT_MODE == 0)
                 {
