@@ -33,7 +33,7 @@ function __InputRetroSystem()
                             break;
                         }
                         
-                        _key = ds_map_find_next(__descriptionFilterMapm, _key);
+                        _key = ds_map_find_next(__descriptionFilterMap, _key);
                     }
                 }
 
